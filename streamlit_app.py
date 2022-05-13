@@ -28,9 +28,6 @@ streamlit.header('Fruityvice Fruit Advice!')
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered',fruit_choice)
 
-#Allow the user to add a fruit to the list
-add_my_fruit =  streamlit.text_input('What fruit would you like to add?')
-streamlit.write('Thanks for adding',add_my_fruit)
 
 #This will not work correctly, but just go with it for now
 #my_cur.execute("insert into fruit_load_list values ('from streamlit')")
@@ -56,3 +53,7 @@ my_data_row = my_cur.fetchall() #replace fetchone with fetchall
 
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_row)
+
+#Allow the user to add a fruit to the list
+add_my_fruit =  streamlit.text_input('What fruit would you like to add?')
+streamlit.write('Thanks for adding',add_my_fruit)
