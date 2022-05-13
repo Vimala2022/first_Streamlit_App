@@ -64,7 +64,7 @@ if streamlit.button('Get Fruit Load List'):
    my_data_rows = get_fruit_load_list() #replace fetchone with fetchall with function as the last resort
    streamlit.dataframe(my_data_rows)
    
-   my_cur.execute("insert into fruit_load_list values ('from streamlit')") #Fix the control of Flow
+my_cur.execute("insert into fruit_load_list values ('from streamlit')") #Fix the control of Flow
 
 
 #Allow the user to add a fruit to the list
